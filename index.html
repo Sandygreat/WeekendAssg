@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Predict and win:<b id="outputgame"></b></p>
+
+    <p>  
+        <label for="Play">Play</label>
+        <input type="text" id="output" onclick="getNumber()">
+    </p>
+    <p>
+        <button onclick="one ()"> 1</button>
+        <button onclick="two ()"> 2</button>
+        <button onclick="three ()"> 3</button>
+        <button onclick="four ()"> 4</button>
+        <button onclick="five ()"> 5</button>
+        <button onclick="six ()"> 6</button>
+        <button onclick="seven ()"> 7</button>
+        <button onclick="eight ()"> 8</button>
+    </p>
+
+
+
+
+
+
+    <script>
+        function getNumber(){
+            let Play= document.getElementById('output').value;
+            let outputgame;
+        if (output <= 7 && output >=5){  
+            outputgame= "You win"  
+        }else if (output <=4 && output >=1){
+            outputgame= 'you lose'
+        }
+        }
+             document.getElementById('outputgame').innerHTML=Play;
+
+
+        function one(){
+            document.getElementById("output").value += '1'
+        }
+        function two(){
+            document.getElementById("output").value += '2'
+        }
+        function three(){
+            document.getElementById("output").value += '3'
+        }
+        function four(){
+            document.getElementById("output").value += '4'
+        }
+        function five(){
+            document.getElementById("output").value += '5'
+        }
+        function six(){
+            document.getElementById("output").value += '6'
+        }
+        function seven(){
+            document.getElementById("output").value += '7'
+        }
+        function eight(){
+            document.getElementById("output").value += '8'
+        }
+
+
+
+    </script>
+</body>
+</html>
